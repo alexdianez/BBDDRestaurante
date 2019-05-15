@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootEMP" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="restaurante.MAIN.PagEMPController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/F:/alex/GRADO%20SUPERIOR/programacion/Restaurante/src/1278_800x600.jpg" />
+               </source>
+            </ImageInput>
+         </effect>
+      </AnchorPane>
+      <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="24.0" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="TOP_CENTER" prefHeight="67.0" prefWidth="425.0" text="RESTAURANTE" textAlignment="CENTER" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="flashlight" size="65.0" />
+               </font>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Label>
+            <Separator prefHeight="7.0" prefWidth="800.0" />
+            <Separator orientation="VERTICAL" prefHeight="45.0" prefWidth="15.0" />
+            <Label prefHeight="39.0" prefWidth="153.0" style="-fx-background-color: white; -fx-background-radius: 15;" text="EMPLEADOS" textAlignment="CENTER" underline="true">
+               <font>
+                  <Font name="flashlight" size="34.0" />
+               </font>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Separator prefHeight="0.0" prefWidth="21.0" />
+                  <Button fx:id="botonAtras" mnemonicParsing="false" onMouseClicked="#clickAtras" prefHeight="34.0" prefWidth="81.0" text="Atrás" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <TableView fx:id="tablaEMP" prefHeight="280.0" prefWidth="800.0" style="-fx-background-radius: 50; -fx-background-insets: 4;">
+              <columns>
+                  <TableColumn fx:id="columNOM" prefWidth="125.0" style="-fx-background-radius: 50;" text="NOMBRE" />
+                  <TableColumn fx:id="columAPELL" prefWidth="102.0" style="-fx-background-radius: 50;" text="APELLIDOS" />
+                  <TableColumn fx:id="columSAL" prefWidth="100.0" style="-fx-background-radius: 50; -fx-alignment: center;" text="SALARIO" />
+                  <TableColumn fx:id="columFUNC" prefWidth="116.0" style="-fx-background-radius: 50; -fx-alignment: center;" text="FUNCIÓN" />
+                  <TableColumn fx:id="columNAC" prefWidth="180.0" style="-fx-background-radius: 50; -fx-alignment: center;" text="FECHA DE NACIMIENTO" />
+                  <TableColumn fx:id="columEST" prefWidth="176.0" style="-fx-background-radius: 50; -fx-alignment: center;" text="ESTABLECIMIENTO" />
+              </columns>
+            </TableView>
+            <GridPane prefHeight="204.0" prefWidth="800.0" style="-fx-background-color: white; -fx-background-radius: 50;">
+              <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="263.0" minWidth="0.0" prefWidth="55.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="486.0" minWidth="10.0" prefWidth="480.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="173.0" minWidth="10.0" prefWidth="171.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints maxHeight="24.0" minHeight="5.0" prefHeight="24.0" />
+                  <RowConstraints maxHeight="19.0" minHeight="0.0" prefHeight="0.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="fieldNOM" prefHeight="34.0" prefWidth="475.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                  <TextField fx:id="fieldAPELL" prefHeight="25.0" prefWidth="299.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="64.0" text="Nombre:" textAlignment="CENTER" GridPane.rowIndex="8" />
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="64.0" text="Apellidos:" GridPane.rowIndex="10" />
+                  <TextField fx:id="fieldFUN" prefHeight="34.0" prefWidth="475.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="64.0" text="Función:" GridPane.rowIndex="12" />
+                  <Button fx:id="botonNuevo" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#botonNuevo" text="NUEVO" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                  <Button fx:id="botonEditar" contentDisplay="CENTER" mnemonicParsing="false" onAction="#botonEdit" text="EDITAR" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                  <Button fx:id="botonEliminar" mnemonicParsing="false" onAction="#botonDelete" text="ELIMINAR" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+                  <Button mnemonicParsing="false" onAction="#botonSave" text="GUARDAR" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPrincipal" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="restaurante.MAIN.FXMLController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/F:/alex/GRADO%20SUPERIOR/programacion/Restaurante/src/800x600_triangle-background-colorful.jpg" />
+               </source>
+            </ImageInput>
+         </effect>
+      </AnchorPane>
+      <VBox alignment="TOP_CENTER" layoutY="14.0" prefHeight="653.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Separator orientation="VERTICAL" prefHeight="31.0" prefWidth="65.0" />
+            <Label alignment="TOP_CENTER" prefHeight="88.0" prefWidth="452.0" text="RESTAURANTE" textAlignment="CENTER" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="flashlight" size="72.0" />
+               </font>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Label>
+            <Separator orientation="VERTICAL" prefHeight="71.0" prefWidth="65.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Separator prefHeight="50.0" prefWidth="104.0" />
+                  <Button fx:id="botonEstablecimiento" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#clickbotonEST" prefHeight="105.0" prefWidth="246.0" style="-fx-background-radius: 20;" text="ESTABLECIMIENTO">
+                     <font>
+                        <Font name="MV Boli" size="20.0" />
+                     </font>
+                     <effect>
+                        <Reflection fraction="0.8" topOpacity="0.71" />
+                     </effect></Button>
+                  <Separator prefHeight="50.0" prefWidth="151.0" />
+                  <Button id="botonEmpleado" fx:id="botonEmpleado" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#clickbotonEMP" prefHeight="100.0" prefWidth="235.0" style="-fx-background-radius: 20;" text="EMPLEADO" textAlignment="RIGHT">
+                     <font>
+                        <Font name="MV Boli" size="20.0" />
+                     </font>
+                     <effect>
+                        <Reflection topOpacity="0.63" />
+                     </effect></Button>
+               </children>
+            </HBox>
+         </children>
+         <effect>
+            <Blend mode="DARKEN" />
+         </effect>
+      </VBox>
+   </children>
+   <effect>
+      <ColorAdjust brightness="0.02" contrast="0.02" hue="-0.07" saturation="0.07" />
+   </effect>
+</AnchorPane>

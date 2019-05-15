@@ -1,0 +1,16 @@
+----------------------------------------------------------------
+Wed May 15 08:58:40 CEST 2019:
+ Iniciando instancia a816c00e-016a-ba49-31a8-0000004a6170 de Derby, versión The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): 
+en el directorio de base de datos F:\alex\GRADO SUPERIOR\programacion\Restaurante\BBDDREST con el cargador de clases sun.misc.Launcher$AppClassLoader@194fa3e
+Cargado desde file:/F:/Programas/glassfish-4.1.1/javadb/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_202-b08
+user.dir=F:\alex\GRADO SUPERIOR\programacion\Restaurante
+os.name=Windows 10
+os.arch=x86
+os.version=10.0
+derby.system.home=null
+Cargador de clases de base de datos iniciado - derby.database.classpath=''
+----------------------------------------------------------------
+Wed May 15 08:58:54 CEST 2019:
+Cerrando la instancia a816c00e-016a-ba49-31a8-0000004a6170 en el directorio de base de datos F:\alex\GRADO SUPERIOR\programacion\Restaurante\BBDDREST con cargador de clases sun.misc.Launcher$AppClassLoader@194fa3e
